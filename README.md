@@ -346,7 +346,7 @@ Time to practice your array-making skills.
 4. Use `console.log()` to see what values now are in the array.
 5. Use `console.log()` again to check the length of your array.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Favorite Foods" src="https://codepen.io/GAmarketing/embed/poBNxqv?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Favorite Foods" src="https://codepen.io/GAmarketing/embed/poBNxqv?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/poBNxqv">
   Favorite Foods</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -431,7 +431,7 @@ Now, it’s your turn to tell us something about yourself using an object!
 3. Make sure one of the properties is your name, one is your age, and one contains an array.
 4. When you’re done, `console.log()` your object to check your work.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="All About You" src="https://codepen.io/GAmarketing/embed/rNbWqoL?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="All About You" src="https://codepen.io/GAmarketing/embed/rNbWqoL?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/rNbWqoL">
   All About You</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -512,7 +512,7 @@ Let’s use dot notation to work with an object about yourself. This time, we’
 1. Add a `name` property equal to your name in string format.
 2. Add an `age` property equal to your age as a number.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Introduce Yourself" src="https://codepen.io/GAmarketing/embed/xxeRymd?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Introduce Yourself" src="https://codepen.io/GAmarketing/embed/xxeRymd?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/xxeRymd">
   Introduce Yourself</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -530,7 +530,7 @@ Let’s throw it back to string concatenation, but this time, we’ll use the `a
 
 Add `"Chemical X"` to the existing array of ingredients by using the `push()` method.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Arrays are Your New Superpower" src="https://codepen.io/GAmarketing/embed/LYvbgMz?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Arrays are Your New Superpower" src="https://codepen.io/GAmarketing/embed/LYvbgMz?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/LYvbgMz">
   Arrays are Your New Superpower</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -550,7 +550,7 @@ Pancakes
 Biscuits and Gravy
 ```
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Let's Eat" src="https://codepen.io/GAmarketing/embed/YzMpJda?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Let's Eat" src="https://codepen.io/GAmarketing/embed/YzMpJda?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/YzMpJda">
   Let's Eat</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -568,7 +568,7 @@ For this challenge, create an object named `artist` that represents your favorit
 2. An array called `talents`, which should contain strings.
 3. A number called `albumsRecorded`. 
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="The Work of an Artist" src="https://codepen.io/GAmarketing/embed/RwOoeEJ?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="The Work of an Artist" src="https://codepen.io/GAmarketing/embed/RwOoeEJ?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/RwOoeEJ">
   The Work of an Artist</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -583,7 +583,7 @@ We’re programming a video game in space, and our `player` was doing really wel
 1. Set `health` to `0`, because there’s no coming back from an asteroid hit.
 2. Set `points` to `950`, because they deserve some credit for a spectacular ending.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Game Over" src="https://codepen.io/GAmarketing/embed/mdgOzaj?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Game Over" src="https://codepen.io/GAmarketing/embed/mdgOzaj?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/mdgOzaj">
   Game Over</a> by General Assembly (<a href="https://codepen.io/GAmarketing">@GAmarketing</a>)
   on <a href="https://codepen.io">CodePen</a>.
