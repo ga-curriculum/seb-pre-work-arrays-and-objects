@@ -61,7 +61,7 @@ Enter the **array** — a list that stores multiple items together.
   WISTIA EXAMPLE. REPLACE 11dit621rx with the id
 -->
 <div class="wistia_embed wistia_async_63qm6h7hlg wistia_embed_initialized" id="wistia-63qm6h7hlg"
-  style="width: 100%; height: 50%;">
+  style="width: 100%; height: 90%;">
   <div id="wistia_chrome_23" class="w-chrome notranslate" tabindex="-1">
     <div id="wistia_grid_57_wrapper" style="display: block; width: 630px; height: 354.375px;">
       <div id="wistia_grid_57_above" style="height: 0px; font-size: 0px; line-height: 0px;"> </div>
