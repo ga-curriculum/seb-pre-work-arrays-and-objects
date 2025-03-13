@@ -5,7 +5,13 @@
 <span id=time-estimate class="color-grey-500">30 mins</span>
 
 <p id="lesson-description">
-  Say you’re compiling a playlist of your favorite karaoke songs. You could write each song on a different sheet of paper, but it would make more sense to have your whole playlist in one place. Similarly, in JavaScript, it wouldn’t be efficient to declare each song title as an individual variable. But what if you could store a collection of titles in each variable? That’s where arrays and objects come in, allowing you to store and use larger chunks of data in JavaScript. Let’s dive in.</p>
+Imagine you’re creating a list of your favorite songs. Instead of writing each song on a separate note, it would be much easier to keep them all together in one place.
+
+Similarly, in JavaScript, it wouldn’t be efficient to store each song title in a separate variable. Instead, we can use <strong>arrays</strong> and <strong>objects</strong>, which allow us to store multiple pieces of related data in a single variable.
+
+These powerful tools help organize and manage data more effectively. Let’s explore how they work!
+
+</p>
 
 <h5 id="topics-header" class="color-grey-500">Topics</h5>
 
@@ -21,7 +27,7 @@ Objects
 
 <hr>
 
-<a href="https://ga-create-api.s3.amazonaws.com/studyguides/arrays-and-objects-ef6ea5.pdf" target="_blank" download="arrays_and_objects_study_guide.pdf" class="ant-btn" data-trackable="true" data-track-category="study guide" data-track-section="lesson page" data-track-action="download study guide"><span role="img" class="anticon"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><g class="download_svg__nc-icon-wrapper"><path d="M8 12c.3 0 .5-.1.7-.3L14.4 6 13 4.6l-4 4V0H7v8.6l-4-4L1.6 6l5.7 5.7c.2.2.4.3.7.3z"></path><path data-color="color-2" d="M1 14h14v2H1z"></path></g></svg></span><span> Download Study Guide</span></a>
+<a href="./assets/arrays_and_objects_study_guide.pdf" target="_blank" download="arrays_and_objects_study_guide.pdf" class="ant-btn" data-trackable="true" data-track-category="study guide" data-track-section="lesson page" data-track-action="download study guide"><span role="img" class="anticon"><svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><g class="download_svg__nc-icon-wrapper"><path d="M8 12c.3 0 .5-.1.7-.3L14.4 6 13 4.6l-4 4V0H7v8.6l-4-4L1.6 6l5.7 5.7c.2.2.4.3.7.3z"></path><path data-color="color-2" d="M1 14h14v2H1z"></path></g></svg></span><span> Download Study Guide</span></a>
 
 ---
 
@@ -30,29 +36,32 @@ Objects
 <p>By the end of this lesson, you'll be able to:</p>
 
 <ul>
-  <li>Build an array and an object in JavaScript.</li>
+  <li>Build arrays and objects in JavaScript.</li>
   <li>Explore and manipulate arrays using properties and methods.</li>
-  <li>Use dot notation to access and add information to an object.</li>
+  <li>Use dot notation to access or change information in an object.</li>
 </ul>
 
 ---
 
 <h1 class="slide-header">So Much Cheese, So Little Time</h1>
 
-![](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-js/Lesson%202/cheesegif.gif)
+<img src="./assets/cheesegif.gif" alt="Cheese Gif" style="width:500px;"/>
 
-Your best friend is a cheese aficionado. He’s so obsessed that he’s writing a JavaScript program to catalog the 750 types of cheese he’s sampled, along with his notes on each. But putting each type into its own variable would mean tedious work like this:
+Your friend is passionate about cheese and wants to keep track of all the different types they have tried. So far, they have sampled 750 varieties from around the world and want to create a JavaScript program to catalog them along with tasting notes.
+
+But if they store each type of cheese in a separate variable, it would require a lot of repetitive work, like this:
+
 ```javascript
-const cheese1 = "Aged British Cheddar";
-const cheese2 = "Aggiano";
-const cheese3 = "American";
-const cheese4 = "Applewood Smoked Chevre";
+const cheese1 = "Aged Cheddar";
+const cheese2 = "Brie";
+const cheese3 = "Gouda";
+const cheese4 = "Paneer";
 ...
 ```
 
-If only there were a way for a single variable to hold multiple values...
+If only there were a way for a **single variable** to store multiple values...
 
-Enter the **array** — a list that stores multiple items together.
+That's where the **array** comes in! An array allows us to store multiple related items in a single variable, making it much easier to manage and organize data.
 
 ---
 
@@ -142,79 +151,90 @@ Enter the **array** — a list that stores multiple items together.
 </div>
 <!-- YOUTUBE -->
 <!-- VIMEO -->
-<details>
-  <summary>Transcript</summary>
-  
-  <p class="transcript-text">
-    We’ve learned how variables are used to temporarily store and remember data. But say we’re dealing with multiple variables. Then what do we do?
 
-    For instance, say we’re creating a grocery list of items we need for a fruit salad. We could declare each of the items individually. This would kind of be like writing each item on our list on a different sheet of paper. It would probably be easier and make more sense to just have it all in one place.
-    
-    We can do the same thing with variables using arrays. An array is a list of values contained within brackets and separated by commas. Each value in the array is called an element. Just as we might refer to an item on a grocery list by its placement, the same is true for the elements in an array. However, instead of starting at one, we start at zero.
-    
-    We’ll get into all of this in depth later on. For now, just remember that when we’re dealing with the variable salad, arrays can help us keep all of our ingredients in one place.
-  </p>
+<details>
+<summary>Transcript</summary>
+  
+<p class="transcript-text">
+  We’ve learned how variables are used to temporarily store and remember data. But say we’re dealing with multiple variables. Then what do we do?
+
+For instance, say we’re creating a grocery list of items we need for a fruit salad. We could declare each of the items individually. This would kind of be like writing each item on our list on a different sheet of paper. It would probably be easier and make more sense to just have it all in one place.
+
+We can do the same thing with variables using arrays. An array is a list of values contained within brackets and separated by commas. Each value in the array is called an element. Just as we might refer to an item on a grocery list by its placement, the same is true for the elements in an array. However, instead of starting at one, we start at zero.
+
+We’ll get into all of this in depth later on. For now, just remember that when we’re dealing with the variable salad, arrays can help us keep all of our ingredients in one place.
+
+</p>
 </details>
 
 ---
 
 <h1 class="slide-header">Array Syntax</h1>
 
-![Array Syntax](https://ga-instruction.s3.amazonaws.com/json/WDI-Fundamentals/assets/unit-8/array_syntax.png)
+<img src="./assets/array_syntax.png" alt="Array Syntax" style="width:600px;"/>
 
-Arrays are **data structures**, which is a fancy way to say that they’re a means of organizing information. In an array, we place multiple values in a sequential list.
+An **array** is a way to organize multiple pieces of information in JavaScript. Instead of storing each value in a separate variable, an array allows us to store **a list of values** inside a single variable.
 
-The items in the list — known as **elements** — are separated by commas and situated between square brackets `[ ]`.
+The individual items in an array are called **elements**. These elements are **separated by commas** and enclosed within **square brackets `[ ]`**.
 
-``` js
-const beverages = ["coffee", "tea", "hot chocolate", "milk"];
+```js
+const beverages = ['coffee', 'tea', 'hot chocolate', 'milk'];
 const leapYears = [2016, 2020, 2024, 2028];
 ```
 
-An array usually contains one data type and, in JavaScript, arrays can dynamically grow and shrink in size.
+- Arrays usually store one type of data (all numbers or all strings).
+- Arrays in JavaScript are flexible—they can grow or shrink in size as needed.
+
+Arrays help keep information organized and make it easier to work with multiple values at once!
 
 ---
 
 <h1 class="slide-header">Indices</h1>
 
-Items in an array are stored in _sequential_ order. Each element has an **index** — a number that tells us the position in the array at which the element can be found.
+Items in an array are stored in a **specific order**. Each item has a unique **index**, which is a number that tells us the position of the item in the array.
 
-Indices allow you to access and update array values.
+These **index numbers** allow us to access or update individual values within an array.
 
-Take a look at this grocery list. Do you notice anything interesting about how these items are numbered?
+Take a look at this grocery list. Notice how each item is assigned a number:
 
 ```html
-0. Milk
-1. Cheese
-2. Juice
-3. Cauliflower
+1. Milk 2. Cheese 3. Juice 4. Cauliflower
 ```
+
+Arrays in JavaScript work in a similar way, but there's one key difference: **JavaScript starts counting from 0 instead of 1!** We’ll explore how this works next.
 
 ---
 
 <h1 class="slide-header">Index Values</h1>
 
-You may have noticed that the numbers start at `0` instead of `1`. JavaScript, like many programming languages, is _zero-based_, meaning its numbering starts at `0` instead of `1`.
+You may have noticed that the numbering starts at **`0` instead of `1`**. This is because JavaScript, like many programming languages, uses **zero-based indexing**.
 
-So when we start assigning index values to an array, the first position in the array will be `[0]`, the second will be `[1]`, and so on. Take a look at the following example:
+This means the **first** item in an array has an index of `0`, the **second** item has an index of `1`, and so on.
 
 ```javascript
-const animals = ["camel", "dog", "lizard", "cat"];
+const animals = ['camel', 'dog', 'lizard', 'cat'];
 ```
 
-As you can see, there are four elements contained within this array.
+This array contains **four elements**, but their positions (indices) start from `0`.
 
-![](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-js/Lesson%202/animalsarray.png)
+<img src="./assets/animalsarray.png" alt="array of Animals" style="width:500px;"/>
 
 ---
 
 <h1 class="slide-header">Knowledge Check</h1>
 
-In the array below, what’s the index of the term `"pepperoni pizza"`?
+Look at the array below. Can you determine the **index** of `"spaghetti"`?
 
 ```js
-const favoriteFoods = ["ice cream", "pepperoni pizza", "apple pie", "almond butter"];
+const favoriteFoods = [
+  'rice and curry',
+  'spaghetti',
+  'mango pudding',
+  'hummus',
+];
 ```
+
+Remember, **JavaScript starts counting from `0`**.
 
 <fieldset>
   <legend>Please select one of the following</legend>
@@ -230,39 +250,58 @@ const favoriteFoods = ["ice cream", "pepperoni pizza", "apple pie", "almond butt
 
 <h1 class="slide-header">Accessing Elements of an Array</h1>
 
-To see what’s contained in an array, we use a format called **bracket notation**. Bracket notation is written like this: `arrayName[0]`. This tells JavaScript to find the array called `arrayName`, then look at the value at index `0`.
+To retrieve a specific item from an array, we use **bracket notation**. This means writing the array’s name followed by square brackets `[ ]`, with the index of the item inside.
 
-Looking at our food array, we could find the second value in the array using a `console.log`:
+For example, `arrayName[0]` tells JavaScript:
+
+1. Look at the array called `arrayName`.
+2. Get the value at index `0` (the first item).
+
+Let’s try this with our **favoriteFoods** array. Below, we use `console.log()` to access the **second item** in the list:
+
 ```js
-const favoriteFoods = ["ice cream", "pepperoni pizza", "apple pie", "almond butter"];
-console.log(favoriteFoods[1]);
+const favoriteFoods = ['ice cream', 'pizza', 'lemon cake', 'almond butter'];
+
+console.log(favoriteFoods[1]); // What do you think this will print?
 ```
 
-![](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-js/Lesson%202/foodarray.png)
+_If you said "pizza" you are correct!_
+
+<img src="./assets/foodarray.png" alt="Array of Foods" style="width:500px;"/>
 
 ---
 
 <h1 class="slide-header">Updating Elements of an Array</h1>
 
-Changing an element in an array is just as easy. To access a value from an array, we use the array name, followed by the index number of the element we want to update. We then simply write an *assignment operator* as if we were assigning a value to a variable.
+Just like variables, array elements can be updated. To change a value in an array:
+
+1. Use the **array name**.
+2. Add **square brackets `[ ]`** with the **index** of the item you want to update.
+3. Use the **assignment operator `=`** to set a new value.
 
 ```js
-favoriteFoods[1] = "veggie burgers";
+favoriteFoods[1] = 'veggie burger';
 ```
 
-In this example, we’re replacing `"pepperoni pizza"`, the element previously at index `1`, with `"veggie burgers"`. The updated array will look like this:
+In this case, we are replacing `"pizza"`, which was previously at index `1`, with `"veggie burger"`.
+
+Now, the updated array looks like this:
 
 ```js
-["ice cream", "veggie burgers", "apple pie", "almond butter"];
+['ice cream', 'veggie burger', 'lemon cake', 'almond butter'];
 ```
 
-![](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-js/Lesson%202/mygafoodarray.001.jpeg)
+<img src="./assets/mygafoodarray.001.jpeg" alt="Array of Foods" style="width:500px;"/>
+
+- **Arrays are mutable**, meaning we can change their contents.
+- **Index numbers must be used correctly**, or the wrong item will be updated.
+- **Only the selected value changes**—the rest of the array stays the same.
 
 ---
 
 <h1 class="slide-header">Knowledge Check</h1>
 
-Given the following code snippet, what would the console return? You might want to write these changes down somewhere to keep track.
+Look at the code snippet below. Can you figure out what the **console** will display?
 
 ```js
 const luckyNumbers = [13, 42, 7, 28];
@@ -270,6 +309,7 @@ luckyNumbers[0] = 99;
 luckyNumbers[2] = luckyNumbers[0] - luckyNumbers[2];
 console.log(luckyNumbers);
 ```
+
 <fieldset>
   <legend>Please select one of the following</legend>
   <input type="radio" name="action" id="track" value="track" /><label for="track">[99, 71, 7, 8]</label><br />
@@ -282,69 +322,85 @@ console.log(luckyNumbers);
 
 <h1 class="slide-header">The Length Property</h1>
 
-In addition to containing multiple elements, arrays also have a number of built-in properties and functions that give them many useful abilities.
+Arrays don’t just store multiple values—they also come with **built-in properties and functions** that make them even more useful.
 
-All arrays have a property called `length`, which tells us how many elements are present in the array. To access this value, simply tack on `.length` to the end of an array’s name.
+One important property is **`length`**, which tells us how many elements are in an array. To find the length of an array, simply add `.length` to the array’s name.
 
-Here’s an example of `.length` in action:
-
-```javascript
+```js
 const numbers = [10, 20, 30, 40];
-numbers.length;
-// => 4 elements in the array
+console.log(numbers.length); // Outputs: 4
 ```
+
+- `.length` returns the total number of elements in an array.
+- The count starts at **1**, even though JavaScript indexing starts at `0`.
+- This property is useful when checking if an array has data in it.
 
 ---
 
 <h1 class="slide-header">Push and Pop</h1>
 
-Just as we can use concatenation to modify strings, we can use **array methods** to work with arrays. A method manipulates items in an array, whether by sorting, removing, or adding data.
+Just like we can modify **strings** using concatenation, we can modify **arrays** using **array methods**. Methods are built-in functions that allow us to **add, remove, or rearrange** elements in an array.
 
-To start, let's look at two array methods that accomplish simple-yet-important functions:
+Let’s start with two basic but useful methods:
 
-| Method | What It Does | How It’s Written |
-| --- | --- | --- |
-| Push | Adds new items to the end of an array. | `arrayName.push(elementToAdd)` |
-| Pop | Removes items from the end of an array. | `arrayName.pop()` |
+| Method | What It Does                                    | How It’s Used              |
+| ------ | ----------------------------------------------- | -------------------------- |
+| `push` | **Adds** a new item to the **end** of an array. | `arrayName.push(newItem);` |
+| `pop`  | **Removes** the **last** item from an array.    | `arrayName.pop();`         |
 
-(And yes, there are many other array methods out there — we’re just starting with the basics here.)
+```js
+const fruits = ['apple', 'banana', 'mango'];
+
+// Adding a new item
+fruits.push('orange');
+console.log(fruits); // ["apple", "banana", "mango", "orange"]
+
+// Removing the last item
+fruits.pop();
+console.log(fruits); // ["apple", "banana", "mango"]
+```
+
+(And yes, there are **many more array methods**, but we’ll start with these basics!)
 
 ---
 
 <h1 class="slide-header">Knowledge Check</h1>
 
-To recap, `.push()` adds new items to the end of an array and `.pop()` removes items from the end of an array.
+We’ve learned that:
 
-Given the following code snippet, what would show up in the console?
+- `.push()` **adds** a new item to the **end** of an array.
+- `.pop()` **removes** the **last** item from an array.
+
+Now, look at the code below. Can you predict what will be printed in the **console**?
 
 ```js
-const myHobbies = ["basket weaving", "hot yoga", "film noir movies"];
-myHobbies.pop();
-myHobbies.push("fantasy novels");
-console.log(myHobbies);
+const favoriteSports = ['football', 'basketball', 'tennis'];
+favoriteSports.pop();
+favoriteSports.push('cricket');
+console.log(favoriteSports);
 ```
 
 <fieldset>
   <legend>Please select one of the following</legend>
-  <input type="radio" name="action" id="track" value="track" /><label for="track">["basket weaving", "hot yoga", "film noir movies", "fantasy novels"]</label><br />
-  <input type="radio" name="action" id="event" value="event"  /><label for="event">["fantasy novels", "basket weaving", "hot yoga"]</label><br />
-  <input type="radio" name="action" id="message" value="message" correct="true"  /><label for="message">["basket weaving", "hot yoga", "fantasy novels"]</label><br />
-  <input type="radio" name="action" id="answer4" value="answer4" /><label for="answer4">["film noir movies", "basket weaving", "hot yoga", "fantasy novels"]</label><br />
-
+  <input type="radio" name="action" id="track" value="track" /><label for="track">["football", "basketball", "tennis", "cricket"]</label><br />
+  <input type="radio" name="action" id="event" value="event"  /><label for="event">["cricket", "football", "basketball"]</label><br />
+  <input type="radio" name="action" id="message" value="message" correct="true"  /><label for="message">["football", "basketball", "cricket"]</label><br />
+  <input type="radio" name="action" id="answer4" value="answer4" /><label for="answer4">["tennis", "football", "basketball", "cricket"]</label><br />
 </fieldset>
+
 <button class="ant-btn ant-btn-primary multiple-choice-radio-submit">Submit Answer</button>
 
 ---
 
 <h1 class="slide-header">Your Turn</h1>
 
-Time to practice your array-making skills.
+Now it's time to put your array skills to the test! Follow these steps to create and modify an array:
 
-1. Create an array called `favoriteFoods` with four values in it.
-2. Push two more values into the array.
-3. `pop()` a value from the array.
-4. Use `console.log()` to see what values now are in the array.
-5. Use `console.log()` again to check the length of your array.
+1. **Create an array** called `favoriteFoods` and add **four food items** of your choice.
+2. **Add two more items** to the array using `.push()`.
+3. **Remove the last item** from the array using `.pop()`.
+4. **Print the updated array** using `console.log()`.
+5. **Check the array length** by logging `favoriteFoods.length`.
 
 <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Favorite Foods" src="https://codepen.io/GAmarketing/embed/poBNxqv?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/poBNxqv">
@@ -354,42 +410,63 @@ Time to practice your array-making skills.
 
 ---
 
-<h1 class="slide-header">Our Next Data Structure</h1>
+<h1 class="slide-header">Our Next Data Structure - Objects</h1>
 
-Arrays store similar values based on one shared characteristic, such as all of your favorite foods or all of your hobbies.
+Arrays are great for storing **lists of similar items**, like your favorite foods or hobbies.
 
-But, what if you wanted to store both types of information, as well as your age and hometown, in one place? All of that data wouldn’t quite fit into an array, but we can store the information in an **object**.
+But what if you wanted to store **different types of information**—such as your name, age, hometown, and hobbies—all in one place? An array wouldn’t work well for that, but **an object can!**
 
-Here’s how we write an object: We start with the name of the object, followed by its properties, which are surrounded by curly braces:
+**What is an Object?**
+
+An **object** is a data structure that stores multiple pieces of related information using **key-value pairs**. Each **key** represents a category (like "name" or "age"), and each **value** holds the actual data.
+
+Here’s an example of how we write an object:
+
 ```js
 const aboutMe = {
-  name: "Lisa Simpson",
-  hometown: "Springfield, Oregon",
-  age: 8,
-  isABoss: true,
-  hobbies: ["playing the saxophone", "political causes", "saving the world"]
+  name: 'Aisha',
+  hometown: 'London, UK',
+  age: 25,
+  isStudent: false,
+  hobbies: ['reading', 'traveling', 'playing football'],
 };
 ```
+
+Key Features of Objects:
+
+- **Curly braces `{ }`** enclose all the data.
+- Each **property** (like `"name"`, `"age"`, or `"hobbies"`) has a **value**.
+- Values can be **strings, numbers, booleans, or even arrays**.
 
 ---
 
 <h1 class="slide-header">Key Value Pairs</h1>
 
-Objects store properties — written as **key-value pairs of data** — under one umbrella. Here, that umbrella is `aboutMe`, and it contains five key-value properties. 
+Objects store data in **key-value pairs**, grouping related information under one name. In the example below, our object is called `aboutMe`, and it contains _five_ key-value pairs.
 
-Think of a key-value pair as a term and its definition. In this case, a term is `name` (the key) and its definition is `"Lisa Simpson"` (the value). Keys and values are separated by a colon, and commas are used to separate each new key-value pair.
+**What is a Key-Value Pair?**
+
+Think of a **key** as a **label** and a **value** as the **information** connected to it.  
+For example:
+
+- The **key** `"name"` is like a question: _"What is your name?"_
+- The **value** `"Aisha"` is the answer: _"Aisha."_
+
+Keys and values are **separated by a colon (`:`)**, and each pair is **separated by a comma**.
 
 ```js
 const aboutMe = {
-  name: "Lisa Simpson",
-  hometown: "Springfield, Oregon",
-  age: 8,
-  isABoss: true,
-  hobbies: ["playing the saxophone", "political causes", "saving the world"]
+  name: 'Aisha',
+  hometown: 'London, UK',
+  age: 25,
+  isStudent: false,
+  hobbies: ['reading', 'traveling', 'playing football'],
 };
 ```
 
-Notice how we have strings, numbers, Booleans, and arrays all in `aboutMe`. With objects, you can store as much data as you want in whatever format you want. You will even see objects that store other objects as properties.
+**Why Are Objects Useful?**
+
+Objects are useful because they can store different types of data, such as **strings**, **numbers**, **Booleans**, and even **arrays**, all in one place. They help organize related information, making it easier to manage and access. Objects can also store other objects as properties, allowing for more complex and structured data storage.
 
 ---
 
@@ -399,23 +476,22 @@ Which of the following statements about the syntax of this object are **true**?
 
 ```js
 const aboutMe = {
-  name: "Lisa Simpson",
-  hometown: "Springfield, Oregon",
-  age: 8,
-  isABoss: true,
-  hobbies: ["playing the saxophone", "political causes", "saving the world"]
+  name: 'Aisha',
+  hometown: 'London, UK',
+  age: 25,
+  isStudent: false,
+  hobbies: ['reading', 'traveling', 'playing football'],
 };
 ```
 
 <fieldset>
-  <legend>Please select all that apply</legend>
+  <legend>Please select all that are correct:</legend>
   <input type="checkbox" id="uniqueAnswer" name="unique" /><label for="uniqueAnswer">age is a value</label><br />
-  <input type="checkbox" id="uniqueAnswer2" name="unique2" correct="true"/><label for="uniqueAnswer2">isABoss is a key</label><br />
-  <input type="checkbox" id="uniqueAnswer3" name="unique3" correct="true"/><label for="uniqueAnswer3">8 is a value</label><br />
+  <input type="checkbox" id="uniqueAnswer2" name="unique2" correct="true"/><label for="uniqueAnswer2">isStudent is a key</label><br />
+  <input type="checkbox" id="uniqueAnswer3" name="unique3" correct="true"/><label for="uniqueAnswer3">25 is a value</label><br />
   <input type="checkbox" id="uniqueAnswer4" name="unique4" /><label for="uniqueAnswer4">true is a key</label><br />
   <input type="checkbox" id="uniqueAnswer5" name="unique5" correct="true"/><label for="uniqueAnswer5">hobbies is a key</label><br />
-  <input type="checkbox" id="uniqueAnswer6" name="unique6" /><label for="uniqueAnswer6">"Springfield, Oregon" is a key</label><br />
-
+  <input type="checkbox" id="uniqueAnswer6" name="unique6" /><label for="uniqueAnswer6">"London, UK" is a key</label><br />
 </fieldset>
 
 <button class="ant-btn ant-btn-primary multiple-choice-checkbox-submit">Submit Answer</button>
@@ -424,12 +500,15 @@ const aboutMe = {
 
 <h1 class="slide-header">All About You</h1>
 
-Now, it’s your turn to tell us something about yourself using an object!
+Now, it’s your turn to share something about yourself using an **object**!
 
-1. Create an object named `aboutMe`.
-2. Add four key-value properties inside the object. 
-3. Make sure one of the properties is your name, one is your age, and one contains an array.
-4. When you’re done, `console.log()` your object to check your work.
+1. **Create an object** named `aboutMe`.
+2. **Add four key-value pairs** inside the object.
+3. **Include these required properties**:
+   - Your **name** as a key with a string as the value.
+   - Your **age** as a key with a number as the value.
+   - At least **one property that contains an array** (your hobbies or favorite foods).
+4. **Use `console.log()`** to display your object and check your work.
 
 <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="All About You" src="https://codepen.io/GAmarketing/embed/rNbWqoL?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/rNbWqoL">
@@ -441,39 +520,50 @@ Now, it’s your turn to tell us something about yourself using an object!
 
 <h1 class="slide-header">Accessing Values from an Object with Dot Notation</h1>
 
-Just as we can explore what’s in an array using bracket notation and properties, we can see what’s inside an object using **dot notation**. Dot notation is written like this: `objectName.propertyName`.
+Just like we use **bracket notation** to access items in an array, we can use **dot notation** to access specific values inside an object.
 
-For example, if we wanted to check the `hometown` property in the object below, we could add a `console.log` for `aboutMe.hometown`:
+Dot notation is written as:
+
+```js
+objectName.propertyName;
+```
+
+For example, if we want to find the `hometown` value in the object below, we can use `aboutMe.hometown` inside `console.log()`:
 
 ```js
 const aboutMe = {
-  name: "Lisa Simpson",
-  hometown: "Springfield, Oregon",
-  age: 8,
-  isABoss: true,
-  hobbies: ["playing the saxophone", "political causes", "saving the world"]
+  name: 'Aisha',
+  hometown: 'London, UK',
+  age: 25,
+  isStudent: false,
+  hobbies: ['reading', 'traveling', 'playing football'],
 };
-console.log(aboutMe.hometown);
+
+console.log(aboutMe.hometown); // Outputs: "London, UK"
 ```
+
+Dot notation is the most common way to access object values in JavaScript!
 
 ---
 
 <h1 class="slide-header">Knowledge Check</h1>
 
-How would you use the console to check what hobbies are contained in the object below? 
+How can you use the **console** to see what hobbies are stored in the object below?
 
 ```js
 const aboutMe = {
-  name: "Lisa Simpson",
-  hometown: "Springfield, Oregon",
-  age: 8,
-  isABoss: true,
-  hobbies: ["playing the saxophone", "political causes", "saving the world"]
+  name: 'Aisha',
+  hometown: 'London, UK',
+  age: 25,
+  isStudent: false,
+  hobbies: ['reading', 'traveling', 'playing football'],
 };
 ```
 
+Think about how we use **dot notation** to access properties inside an object. What would you type in `console.log()` to display the `hobbies` from `aboutMe`?
+
 <fieldset>
-  <legend>Please select one of the following</legend>
+  <legend>Please select one of the following:</legend>
   <input type="radio" name="action" id="track" value="track" /><label for="track">console.log(hobbies.aboutMe);</label><br />
   <input type="radio" name="action" id="event" value="event"  /><label for="event">console.log(hobbies);</label><br />
   <input type="radio" name="action" id="message" value="message" correct="true"/><label for="message">console.log(aboutMe.hobbies);</label><br />
@@ -484,22 +574,26 @@ const aboutMe = {
 
 <h1 class="slide-header">Creating New Properties in an Object</h1>
 
-We can also use dot notation to add new key-value pairs to an object. 
+We can also use **dot notation** to add new key-value pairs to an object.
 
-Imagine we wanted to add a property to describe Lisa’s dream job. Instead of rewriting the entire object, we could just use dot notation, followed by the value we’re adding, like so:
+Instead of rewriting the entire object, we can simply add a **new property** by using dot notation and assigning it a value.
 
-`aboutMe.dreamJob = "political activist"`
+For example, if we wanted to add Aisha’s **career goal**, we could write:
 
-If we were to `console.log` the object after adding this, we’d get:
+```js
+aboutMe.dreamJob = 'software engineer';
+```
+
+If we `console.log()` the object after adding this, the updated object would look like this:
 
 ```js
 const aboutMe = {
-  name: "Lisa Simpson",
-  hometown: "Springfield, Oregon",
-  age: 8,
-  isABoss: true,
-  hobbies: ["playing the saxophone", "political causes", "saving the world"],
-  dreamJob: "political activist"
+  name: 'Aisha',
+  hometown: 'London, UK',
+  age: 25,
+  isStudent: false,
+  hobbies: ['reading', 'traveling', 'playing football'],
+  dreamJob: 'software engineer',
 };
 ```
 
@@ -507,10 +601,13 @@ const aboutMe = {
 
 <h1 class="slide-header">Your Turn</h1>
 
-Let’s use dot notation to work with an object about yourself. This time, we’ll start with an empty object and use dot notation to add properties.
+Now, let’s create an **empty object** and use **dot notation** to add information about yourself!
 
-1. Add a `name` property equal to your name in string format.
-2. Add an `age` property equal to your age as a number.
+1. **We'll start with an empty object** called `aboutMe`.
+2. **Use dot notation** to add a `name` property and set it to your name as a string.
+3. **Add an `age` property** and set it to your age as a number.
+
+By the end, your object should contain at least two properties. Try printing the object using `console.log()` to check your work!
 
 <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Introduce Yourself" src="https://codepen.io/GAmarketing/embed/xxeRymd?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/xxeRymd">
@@ -518,17 +615,27 @@ Let’s use dot notation to work with an object about yourself. This time, we’
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-**Up for a challenge?**
+**Ready for a challenge?**
 
-Let’s throw it back to string concatenation, but this time, we’ll use the `aboutMe` object. Use concatenation and dot notation to `console.log()` the following sentence, filling in the blanks with the `name` and `age` properties, respectively.
+Let’s combine what we’ve learned about **dot notation** and **string concatenation**!
 
-`"Hello! My name is _______ and I am _______ years old."`
+Use the `aboutMe` object to `console.log()` the following sentence, filling in the blanks with the `name` and `age` properties:
+
+```js
+'Hello! My name is _______ and I am _______ years old.';
+```
+
+To do this, use **dot notation** to access the values inside `aboutMe` and concatenate them into the sentence. Try it out and check your result!
 
 ---
 
 <h1 class="slide-header">Arrays Are Your New Superpower</h1>
 
-Add `"Chemical X"` to the existing array of ingredients by using the `push()` method.
+Time to level up your array skills!
+
+1. Use the `.push()` method to **add** `"Chemical X"` to the existing `ingredients` array.
+
+Try it out and then use `console.log()` to check if the new item was successfully added!
 
 <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Arrays are Your New Superpower" src="https://codepen.io/GAmarketing/embed/LYvbgMz?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/LYvbgMz">
@@ -540,15 +647,21 @@ Add `"Chemical X"` to the existing array of ingredients by using the `push()` me
 
 <h1 class="slide-header">Let's Eat</h1>
 
-We’ve prepared a substantial array of breakfast foods, and it’s time to clear our plate! 
+We’ve prepared a **hearty array of breakfast foods**, but now it’s time to clear the plate!
 
-One by one, use the `pop()` method to remove each string from the back of the array. But first, `console.log()` each item before removing it. Your console output should end up looking like this:
+1. **Use `console.log()`** to print each item before removing it.
+2. **Use the `.pop()` method** to remove the last item from the array, one at a time.
+3. **Repeat until the array is empty.**
+
+Your console output should look something like this:
 
 ```
-Huevos Rancheros
+Croissant
 Pancakes
-Biscuits and Gravy
+Chapati
 ```
+
+Try it out and watch the array shrink with each step!
 
 <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Let's Eat" src="https://codepen.io/GAmarketing/embed/YzMpJda?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/YzMpJda">
@@ -558,15 +671,19 @@ Biscuits and Gravy
 
 ---
 
-<h1 class="slide-header">The Work of an Artist</h1>
+<h1 class="slide-header">Representing Real-World Things with Objects</h1>
 
-Objects are so helpful because they can be used to represent anything in the real world, whether it’s animal, vegetable, or mineral.
+Objects are powerful because they can represent **anything**—from people and places to animals, foods, or even concepts.
 
-For this challenge, create an object named `artist` that represents your favorite musical artist. Give them the following properties:
+1. Create an object named **`artist`** that represents your **favorite musical artist**.
 
-1. A `name`, which should be a string.
-2. An array called `talents`, which should contain strings.
-3. A number called `albumsRecorded`. 
+Your object should include the following properties:
+
+2. **`name`** → A string representing the artist’s name.
+3. **`talents`** → An array of their skills (singing, songwriting, playing instruments).
+4. **`albumsRecorded`** → A number representing how many albums they’ve released.
+
+Try creating your object and printing it with `console.log()` to check your work!
 
 <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="The Work of an Artist" src="https://codepen.io/GAmarketing/embed/RwOoeEJ?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/RwOoeEJ">
@@ -578,10 +695,14 @@ For this challenge, create an object named `artist` that represents your favorit
 
 <h1 class="slide-header">Game Over!</h1>
 
-We’re programming a video game in space, and our `player` was doing really well... until they got hit by an asteroid. Modify the `player` object using dot notation to make the following changes:
+You're programming a **space-themed video game**, and your `player` was doing great... until they got hit by an asteroid!
 
-1. Set `health` to `0`, because there’s no coming back from an asteroid hit.
-2. Set `points` to `950`, because they deserve some credit for a spectacular ending.
+Now, update the `player` object using **dot notation** to reflect their final status:
+
+1. **Set `health` to `0`** → There’s no surviving an asteroid hit!
+2. **Set `points` to `950`** → They deserve some credit for an epic run!
+
+Try making these updates and use `console.log(player)` to check the changes!
 
 <iframe sandbox="allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-forms allow-popups allow-same-origin"  height="400" style="width: 100%;" scrolling="no" title="Game Over" src="https://codepen.io/GAmarketing/embed/mdgOzaj?default-tab=js%2Cresult&editable=true" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/GAmarketing/pen/mdgOzaj">
@@ -593,8 +714,8 @@ We’re programming a video game in space, and our `player` was doing really wel
 
 <h1 class="slide-header">Conclusion</h1>
 
-You're now able to represent complex, real-world objects using JavaScript data structures: arrays and objects.
+Great job! You’ve learned how to represent **real-world objects** in JavaScript using **arrays and objects**. These data structures help us organize and manage information efficiently.
 
-Next, we'll see how JavaScript can use logic and comparisons to make reasonable decisions and run the code that we want it to run.
+Next, we’ll explore how JavaScript can use **logic and comparisons** to make decisions—allowing our code to respond dynamically based on different conditions.
 
 </textarea>
