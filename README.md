@@ -341,12 +341,22 @@ console.log(numbers.length); // Outputs: 4
 
 Just like we can modify **strings** using concatenation, we can modify **arrays** using **array methods**. Methods are built-in functions that allow us to **add, remove, or rearrange** elements in an array.
 
-Let’s start with two basic but useful methods:
+**`.push()` – Adding Items**
 
-| Method    | What It Does                                       | How It’s Used              |
-| --------- | -------------------------------------------------- | -------------------------- |
-| `push`    | **Adds** a new item to the **end** of an array.    | `arrayName.push(newItem);` |
-| `pop`     | **Removes** the **last** item from an array.       | `arrayName.pop();`         |
+- **What it does:** Adds a new item to the **end** of an array.
+- **How to use it:**
+  ```js
+  arrayName.push(newItem);
+  ```
+
+**`.pop()` – Removing Items**
+
+- **What it does:** Removes the **last** item from an array.
+- **How to use it:**
+  ```js
+  arrayName.pop();
+  ```
+Let's look at an example:
 
 ```js
 const fruits = ['apple', 'banana', 'mango'];
