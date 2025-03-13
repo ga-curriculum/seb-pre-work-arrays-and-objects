@@ -171,7 +171,7 @@ We’ll get into all of this in depth later on. For now, just remember that when
 
 <h1 class="slide-header">Array Syntax</h1>
 
-<img src="./assets/array_syntax.png" alt="Array Syntax" style="width:600px;"/>
+<img src="./assets/array_syntax.png" alt="Array Syntax" style="width:700px;"/>
 
 An **array** is a way to organize multiple pieces of information in JavaScript. Instead of storing each value in a separate variable, an array allows us to store **a list of values** inside a single variable.
 
@@ -217,7 +217,7 @@ const animals = ['camel', 'dog', 'lizard', 'cat'];
 
 This array contains **four elements**, but their positions (indices) start from `0`.
 
-<img src="./assets/animalsarray.png" alt="array of Animals" style="width:500px;"/>
+<img src="./assets/animalsarray.png" alt="array of Animals" style="width:600px;"/>
 
 ---
 
@@ -237,7 +237,7 @@ const favoriteFoods = [
 Remember, **JavaScript starts counting from `0`**.
 
 <fieldset>
-  <legend>Please select one of the following</legend>
+  <legend>Please select one of the following:</legend>
   <input type="radio" name="action" id="track" value="track" /><label for="track">0</label><br />
   <input type="radio" name="action" id="event" value="event"  correct="true" /><label for="event">1</label><br />
   <input type="radio" name="action" id="message" value="message" /><label for="message">2</label><br />
@@ -267,7 +267,7 @@ console.log(favoriteFoods[1]); // What do you think this will print?
 
 _If you said "pizza" you are correct!_
 
-<img src="./assets/foodarray.png" alt="Array of Foods" style="width:500px;"/>
+<img src="./assets/foodarray.png" alt="Array of Foods" style="width:600px;"/>
 
 ---
 
@@ -291,7 +291,7 @@ Now, the updated array looks like this:
 ['ice cream', 'veggie burger', 'lemon cake', 'almond butter'];
 ```
 
-<img src="./assets/mygafoodarray.001.jpeg" alt="Array of Foods" style="width:500px;"/>
+<img src="./assets/mygafoodarray.001.jpeg" alt="Array of Foods" style="width:600px;"/>
 
 - **Arrays are mutable**, meaning we can change their contents.
 - **Index numbers must be used correctly**, or the wrong item will be updated.
@@ -343,10 +343,10 @@ Just like we can modify **strings** using concatenation, we can modify **arrays*
 
 Let’s start with two basic but useful methods:
 
-| Method | What It Does                                    | How It’s Used              |
-| ------ | ----------------------------------------------- | -------------------------- |
-| `push` | **Adds** a new item to the **end** of an array. | `arrayName.push(newItem);` |
-| `pop`  | **Removes** the **last** item from an array.    | `arrayName.pop();`         |
+| Method    | What It Does                                       | How It’s Used              |
+| --------- | -------------------------------------------------- | -------------------------- |
+| `push`    | **Adds** a new item to the **end** of an array.    | `arrayName.push(newItem);` |
+| `pop`     | **Removes** the **last** item from an array.       | `arrayName.pop();`         |
 
 ```js
 const fruits = ['apple', 'banana', 'mango'];
